@@ -33,7 +33,7 @@ metadata:
   annotations:
     eks.amazonaws.com/role-arn: arn:aws:iam::663380234130:role/Fluxecraccess
 ---
-apiVersion: batch/v1beta1
+apiVersion: batch/v1
 kind: CronJob
 metadata:
   name: ecr-credentials-sync
@@ -76,6 +76,7 @@ spec:
               value: ecr-credentials
             - name: ECR_REGISTRY
               value: 663380234130.dkr.ecr.us-east-1.amazonaws.com # fill in the account id and region
+              
             volumeMounts:
             - mountPath: /token
               name: token
