@@ -10,12 +10,12 @@ spec:
     gitRepositoryRef:
       name: flux-system
   commit:
-    authorEmail: me@antonputra.com
-    authorName: fluxcdbot
+    authorEmail: samim1000@gmail.com
+    authorName: samimcloud2020
     messageTemplate: '{{range .Updated.Images}}{{println .}}{{end}}'
   interval: 1m0s
   push:
     branch: main
   update:
-    path: ./clusters/eks
+    path: clusters/cluster5
     strategy: Setters
