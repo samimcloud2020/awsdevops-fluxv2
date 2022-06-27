@@ -17,5 +17,5 @@ spec:
   push:
     branch: main
   update:
-    path: clusters/cluster5/flux-system/
+    path: ./cluster/eks
     strategy: Setters
